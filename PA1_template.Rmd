@@ -35,7 +35,7 @@ q + geom_histogram(binwidth=1500) +
     geom_vline(xintercept=median(daily$daily.steps), color="blue")
 ```
 
-We have also included two vertical lines. The red line marks the median daily step total and the blue line marks the mean daily step total. We can verify these numbers with the summary command.
+We have also included two vertical lines. The red line marks the mean daily step total and the blue line marks the median daily step total. We can verify these numbers with the summary command.
 
 ``` {r table-total-steps}
 print(summary(daily$daily.steps))
@@ -92,7 +92,7 @@ q + geom_histogram(binwidth=1500) +
     geom_vline(xintercept=median(daily.imputed$daily.steps), color="blue")
 ```
 
-The average and mean have increased a bit. Let's look at the values.
+The median and mean have increased a bit. Let's look at the values.
 
 ```{r table-imputed-steps}
 print(summary(daily.imputed$daily.steps))

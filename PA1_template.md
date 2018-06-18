@@ -40,7 +40,7 @@ q + geom_histogram(binwidth=1500) +
 
 ![](PA1_template_files/figure-html/total-steps-plot-1.png)<!-- -->
 
-We have also included two vertical lines. The red line marks the median daily step total and the blue line marks the mean daily step total. We can verify these numbers with the summary command.
+We have also included two vertical lines. The red line marks the mean daily step total and the blue line marks the median daily step total. We can verify these numbers with the summary command.
 
 
 ```r
@@ -116,7 +116,7 @@ q + geom_histogram(binwidth=1500) +
 
 ![](PA1_template_files/figure-html/total-steps-imputed-1.png)<!-- -->
 
-The average and mean have increased a bit. Let's look at the values.
+The median and mean have increased a bit. Let's look at the values.
 
 
 ```r
